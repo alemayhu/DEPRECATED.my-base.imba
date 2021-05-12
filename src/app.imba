@@ -1,9 +1,15 @@
 import 'imba/reset.css'
 
+import './components/the-header'
+
 export tag App
 	def render
 		<self>
-			<div[c:blue6]> "Welcome!"
+			<the-header>
+			<section .section>
+				<.container>
+					<h1 .title> "My Base"
+					<p .subtitle> "A simple tool that does [...]"
 			<div> "Url is {document.location.href}"
 			if $web$
 				<p> "This is rendered from the client"
