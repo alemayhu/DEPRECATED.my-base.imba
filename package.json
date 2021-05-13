@@ -5,7 +5,7 @@
   },
   "scripts": {
     "start": "imba src/http.imba",
-    "build": "imba build src/http.imba",
+    "build": "imba build page.imba -o ./dist && imba page.imba",
     "start-express": "imba src/express.imba"
   }
 }
